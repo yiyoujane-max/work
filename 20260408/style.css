@@ -1,0 +1,126 @@
+@charset "utf-8";
+body{
+    background-color: rgb(169, 216, 82);
+    background-image:url(img/bg.png) ;
+    background-repeat: repeat-x;
+  
+}
+a{
+    color: #b32e06;
+}
+a:hover{
+    color: #013bb8;
+    text-decoration: none;
+}
+header,nav,footer{
+    text-align: center;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.menu a{
+    background: #6fbb9a;
+    padding: 10px;
+    background: #6fbb9a;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #90ddbb;
+}
+h1{
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid #95dbbd;
+    background-color: aquamarine;
+    color: #fff;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    text-shadow: 1px 1px 2px #307657;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-image: linear-gradient(to bottom,#6fbb9a,#4a9d79);
+    font-family: "Limelight", sans-serif;
+}
+h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #013bb8;
+    border-left: 10px solid #b30606;
+    color: rgb(29, 185, 133);
+}
+#contents{
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #180f92;
+    background-color: #ffffff;
+}
+.more{
+    text-align: right;
+}
+.h{
+     padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #a72f0e;
+    border-left: 10px solid #b30606;
+    color: rgb(29, 185, 133);
+    border-radius: 5px 0 0 5px;
+}
+.h-sub{
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ad inset;
+}
+.h-sub span{
+    font-size: normal;
+}
+
+.more{
+    text-align: right;
+}
+.more::after{
+    content: url(img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+#contents > section + section{
+    margin-top: 80px;
+}
+a[target="_blank"]::after{
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align:middle;
+}
+a[href^="mailto"]::after{
+    content:url(img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.img-round{
+    border-radius: 50%;
+}
