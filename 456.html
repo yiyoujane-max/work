@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世國旅行社 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/54.jpeg" type="image/x-icon">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0f1197;
+    padding: 20px 40px;
+
+    box-shadow: 0 2px 4px rgba(238, 233, 233, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #49b600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #b62727;
+    font-weight: 500;
+
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 60px 40px;
+
+    background-color: #e0f2fe;
+}
+
+.hero-content,
+.hero-image {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #03045e;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #4a5568;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+
+    margin-bottom: 40px;
+
+    color: #03045e;
+}
+
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 1 calc((100% - 60px) / 3);
+
+    background-color: #f7f4f4;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    padding: 20px;
+}
+
+.card-body h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.card-body p {
+    font-size: 15px;
+    color: #666;
+
+    margin-bottom: 20px;
+
+    flex-grow: 1;
+}
+
+
+.btn {
+    background-color: #0077b6;
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    align-self: flex-start;
+}
+
+.btn:hover {
+    background-color: #03045e;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+
+    margin-top: 40px;
+
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">世國旅行社</div>
+        <ul class="nav-links">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">景點</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">聯絡我們</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>帶你探索全世界</h1>
+            <p>
+                旅行，是為了尋找心中失落的拼圖。亞東旅行社提供最專業的行程規劃，
+                帶您深入體驗各國文化，打造一生難忘的精彩回憶。
+                不論是秘境探險還是奢華度假，跟著我們出發吧！
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <img src="img/222.jpeg" alt="旅遊主視覺">
+        </div>
+    </header>
+
+    <main class="container">
+
+        <h2 class="section-title">熱門景點推薦</h2>
+
+        <div class="card-grid">
+
+            
+            <div class="card">
+                <img src="img/J.jpg" alt="日本">
+                <div class="card-body">
+                    <h3>日本</h3>
+                    <p>欣賞櫻花與體驗日本當地文化。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/F.jpg" alt="法國">
+                <div class="card-body">
+                    <h3>法國</h3>
+                    <p>感受浪漫巴黎與藝術氣息。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/AU.jfif" alt="澳洲">
+                <div class="card-body">
+                    <h3>澳洲</h3>
+                    <p>探索壯麗海岸與自然景觀。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+           
+            <div class="card">
+                <img src="img/K.jfif" alt="韓國">
+                <div class="card-body">
+                    <h3>韓國</h3>
+                    <p>體驗韓流文化與特色美食。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/I.jfif" alt="義大利">
+                <div class="card-body">
+                    <h3>義大利</h3>
+                    <p>享受經典建築與披薩料理。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/TA.jfif" alt="泰國">
+                <div class="card-body">
+                    <h3>泰國</h3>
+                    <p>感受熱帶風情與夜市文化。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/USA.jfif" alt="美國">
+                <div class="card-body">
+                    <h3>美國</h3>
+                    <p>探索繁華都市與自然公園。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/UK.jfif" alt="英國">
+                <div class="card-body">
+                    <h3>英國</h3>
+                    <p>感受歷史文化與英倫風情。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/CA.jfif" alt="加拿大">
+                <div class="card-body">
+                    <h3>加拿大</h3>
+                    <p>欣賞壯觀楓葉與自然景色。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <img src="img/2.jfif" alt="新加坡">
+                <div class="card-body">
+                    <h3>新加坡</h3>
+                    <p>體驗現代城市與多元文化。</p>
+                    <button class="btn">開始探險</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>©2026 亞東旅行社</p>
+    </footer>
+
+</body>
+</html>

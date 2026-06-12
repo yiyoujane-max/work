@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>KOMA-NATSU WEB</title>
+<meta name="keywords" content="貓咪,喵咪,喵星人,貓咪介紹,曬貓">
+<meta name="description" content="介紹我家的貓咪們!還有大量可愛的貓照片。">
+<link href="style.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<style>@charset "utf-8";
+
+/*視窗背景色設定*/
+body {
+  background: #fbf9cc url(img/bg.png) repeat-x;
+}
+
+/*連結顏色設定*/
+a {
+  color: #df4839;
+}
+a:hover {
+  color: #ff705b;
+  text-decoration: none;
+}
+
+/*頁首,導航,頁尾的共通設定*/
+header,nav,footer {
+  text-align: center;
+}
+
+/*頁面標題設定*/
+h1 {
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 5px solid #95dbbd;
+  background-color: #6fbb9a;
+  color: #fff;
+  font-size: 300%;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px #307657;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);
+  font-family: 'Limelight', cursive;
+}
+
+/*內容區塊邊框設定*/
+#contents {
+  width: 798px;
+  margin: 40px auto;
+  padding: 40px 80px;
+  border: 1px solid #f6bb9a;
+  background-color: #fff;
+}
+
+.entryTable{
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #f6bb9e;
+  border-collapse: collapse;
+}
+.entryTable th,
+.entryTable td{
+  padding: 10px 20px;
+  border: 1px solid #f6bb9e;
+}
+.entryTable th{
+  width: 10em;
+  background-color: #ffeeee;
+  text-align: left;
+}
+.entryTable caption{
+  margin-bottom: 10px;
+}
+
+.entryTable input[type="text"],
+.entryTable input[type="email"],
+.entryTable textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(17, 17, 17);
+  box-sizing: border-box;
+  font-size: 1em;
+}
+.entryTable input[type="text"]:focus,
+.entryTable input[type="email"]:focus,
+.entryTable textarea :focus{
+  background-color: #fbf9cc;
+  border-left:7px solid #ff705b;
+  outline: none;
+}
+input,
+label,
+select,
+textarea{
+  cursor: pointer;
+}
+.entryBtn{
+  text-align: center;
+}
+
+.entryBtn input{
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 1em;
+  margin: 0px 10px;
+}
+.entryBtn input[type="submit"]{
+  background: #fadccc;
+}
+
+.entryBtn input:hover {
+  opacity: 0.7;
+}</style>
+</head>
+
+<body>
+   <header> <h1>KOMA-NATSU Web</h1>
+        <p>介紹一下我家的偶像貓咪們！</p></header>
+     
+<nav>
+<ul class="menu">
+<li><a href="#intro">關於本站</a></li>
+<li><a href="#cats">我家的貓咪</a></li>
+<li><a href="#profile">飼主介紹</a></li>
+</ul>
+</nav>
+
+<main id="contents">
+
+<section id="intro">
+    <h2 class="h">關於本站</h2>
+    <p>歡迎光臨本站。這裡是介紹我家貓主子姐妹的曬貓網站，有大量的可愛相片。<br>
+<strong>※未經許可，請勿擅自複製轉載。</strong></p>
+</section>
+
+<section id="cats">
+<h2 class="h">我家的貓咪</h2>
+
+<section>
+<h3 class="h-sub">●小町<span>KOMACHI・♀）</span></h3>
+<img src="img/komachi.jpg" width="480" height="320" alt="小町" class="imgL">
+<p><a href="cats/komachi.html"></a>出生不到2個月就到家的貓姐姐。
+從出生就是養在溫室裡的花朵，所以非常膽小怕生。因為太怕生，只要聽到門鈴聲就會躲起來，所以就算是來我家的客人也難以見到。</p>
+<p class="more clear"><a href="cats/komachi.html">→更多介紹</a></p>
+</section>
+
+<section>
+    <h3 class="h-sub">●小夏<span>（KONATSU・♀）</span></h3>
+    <img src="img/konatsu.jpg" width="480" height="320" alt="小夏" class="imgR">
+<p>為了讓小町有個伴，在1年後抱回來貓妹妹。
+原本是在埼玉縣飯能市的煤礦場出生長大的小野貓。和小町不同，是個性活潑親人，愛吃、愛玩、愛睡的元氣寶寶。</p>
+<p class="more clear"><a href="cats/konatsu.html">→更多介紹</a></p>
+</section>
+</section>
+
+<section id="profile" class="clearfix">
+<h2 class="h">飼主介紹</h2>
+<img src="img/avatar.png" width="480" height="320" alt="飼主" class="img-round imgL">
+<dl>
+ <dt>暱稱 ：</dt><dd>roka404</dd>
+ <dt>職業 ：</dt><dd>Web相關工作的SOHO族</dd>
+<dt>mail ：</dt><dd><a href="mailto:ainfo@roka404.main.jp">ainfo@roka404.main.jp</a></dd>
+<dt>Web ：</dt><dd><a href="http://roka404.main.jp/blog/"
+target="_blank">http://roka404.main.jp/blog/</a></dd>
+</dl>
+</section>
+</main>
+<footer>
+    <p><small>Copyright © KOMA-NATSU Web All Rights Reserved.</small></p>
+</footer>
+
+
+</body>
+</html>
